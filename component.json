@@ -1,0 +1,14 @@
+{
+  "name": "kinematics-system",
+  "repo": "whirlibulf/kinematics-system",
+  "description": "A system to move objects with velocity in the whirlibulf game engine",
+  "version": "0.0.1",
+  "keywords": ["whirlibulf", "system"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
