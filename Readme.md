@@ -19,6 +19,8 @@ This system requires the position component and velocity component.
 This system will change the position component of each object by the amount
 specified in its velocity component per update tick.
 
+The velocity values should be specified in pixels per second.
+
 Register the system:
 
     var Kinematics = require('kinematics-system');

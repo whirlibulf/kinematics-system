@@ -9,6 +9,8 @@ System.prototype.init = function (engine) {
 System.prototype.update = function (dt) {
   var objects, i, velocity, position;
 
+  dt /= 1000;
+
   objects = this.engine.getAll('velocity');
 
   for (i = 0; i < objects.length; ++i) {
@@ -19,9 +21,9 @@ System.prototype.update = function (dt) {
       continue;
     }
 
-    position.x += velocity.x || 0;
-    position.y += velocity.y || 0;
-    position.z += velocity.z || 0;
+    position.x += (velocity.x || 0) * dt;
+    position.y += (velocity.y || 0) * dt;
+    position.z += (velocity.z || 0) * dt;
   }
 };
 
