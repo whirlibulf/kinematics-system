@@ -6,7 +6,7 @@ function System(options) {
 System.prototype.init = function (engine) {
     console.log("Kinematics system loaded");
     this.engine = engine;
-    this.index = this.engine.index(["velocity", "position"]);
+    this.index = this.engine.index("velocity", "position");
 };
 
 System.prototype.update = function (dt) {
